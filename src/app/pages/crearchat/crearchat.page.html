@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar color="primary"> 
+    <ion-title style="text-align: center" >NUEVO CHAT</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img  class="icono" src="assets/icon/mensaje.png">
+  <br>
+  <ion-item>
+    <ion-label position="floating" style="text-align: center">Nombre del Chat</ion-label>
+    <ion-input type="text" name="nombrechat" [(ngModel)]="nombre"></ion-input>
+  </ion-item>
+  <br>
+  <ion-item>
+    <ion-label position="floating" style="text-align: center">Detalle del Chat</ion-label>
+    <ion-input type="text" name="detalle" [(ngModel)]="detalle"></ion-input>
+  </ion-item>
+  <br>
+  <ion-button (click)="crearChat()" expand="block" >Ingresar</ion-button>
+  <br>
+  <ion-button  expand="block"  routerLink="/chat">Regresar</ion-button>
+</ion-content>
